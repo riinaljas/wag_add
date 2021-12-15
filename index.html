@@ -91,24 +91,12 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                        <th scope="row">index</th>\
-                        <td>' + (feature.properties['index'] !== null ? autolinker.link(feature.properties['index'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">lastname</th>\
-                        <td>' + (feature.properties['lastname'] !== null ? autolinker.link(feature.properties['lastname'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
                         <th scope="row">name</th>\
                         <td>' + (feature.properties['name'] !== null ? autolinker.link(feature.properties['name'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">citizenship</th>\
                         <td>' + (feature.properties['citizenship'] !== null ? autolinker.link(feature.properties['citizenship'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">address</th>\
-                        <td>' + (feature.properties['address'] !== null ? autolinker.link(feature.properties['address'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
